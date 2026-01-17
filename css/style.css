@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   margin: 0;
@@ -8,3 +8,101 @@
 }
 
 /* shared styles  */
+
+.width-margin {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.non-dark1 {
+  color: rgba(230, 83, 60, 1);
+}
+
+.non-dark-bgc {
+  background-color: rgba(230, 83, 60, 1);
+}
+
+.display-flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.brand-text {
+  font-style: italic;
+  font-weight: 800;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border-radius: 42px;
+}
+
+.display-none {
+  display: none;
+}
+/* nav styles  */
+
+body {
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+}
+header {
+  margin-top: 58px !important;
+}
+
+.nav-container {
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 36px;
+}
+
+.nav-btn {
+  padding: 8px 20px;
+  border: none;
+}
+
+.navigation {
+  gap: 47px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 8px 16px;
+}
+
+.navigation > p {
+  font-size: 18px;
+}
+
+/* for mobile  */
+
+@media screen and (max-width: 667px) {
+  .header-mobile {
+    padding: 0 20px;
+  }
+  .navigation {
+    display: none;
+  }
+
+  .nav-container > img {
+    display: block;
+  }
+}
+
+/* for tablet  */
+
+@media screen and (min-width: 667px) and (max-width: 744px) {
+  .header-mobile {
+    padding: 0 30px;
+  }
+}
