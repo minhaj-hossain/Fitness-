@@ -45,11 +45,38 @@
   font-weight: 600;
   color: white;
   border-radius: 42px;
+  border: none;
 }
 
 .display-none {
   display: none;
 }
+
+.fonts78 {
+  font-size: 78px;
+}
+
+.fontw9 {
+  font-weight: 900;
+}
+
+.colorHeader {
+  color: rgba(255, 255, 255, 1);
+}
+
+.colorPara {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-padding {
+  padding: 16px 40px 16px 40px;
+}
+
+.btn-trans {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
 /* nav styles  */
 
 body {
@@ -77,16 +104,108 @@ header {
   gap: 47px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 39px;
-  padding: 8px 16px;
+  padding: 5px;
 }
 
 .navigation > p {
   font-size: 18px;
 }
 
+/* banner styles  */
+
+.banner-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(17.41, 17.41, 17.41, 1) 0%,
+    rgba(119.41, 119.41, 119.41, 0) 100%
+  );
+}
+
+.banner {
+  display: flex;
+}
+
+.banner-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+}
+
+.banner-btns > button {
+  margin-right: 14px;
+}
+
+.banner-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 350px;
+}
+
+.banner-badges {
+  width: 193px;
+  height: 98px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.right-badge {
+  position: absolute;
+  top: 21%;
+  right: -15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.right-banner-container {
+  width: 193px;
+  height: 98px;
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(48, 47, 47, 0.5);
+}
+
+.badge-circle {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(230, 83, 60, 1);
+  border-radius: 30px;
+  border: none;
+}
+
+.bagde2pa {
+  margin-bottom: 8px;
+}
+
 /* for mobile  */
 
 @media screen and (max-width: 667px) {
+
+  /* shared styles  */
+
+  
+
+  /* header section  */
+
   .header-mobile {
     padding: 0 20px;
   }
@@ -96,6 +215,11 @@ header {
 
   .nav-container > img {
     display: block;
+  }
+
+  /* banner section  */
+  .banner {
+    flex-direction: column;
   }
 }
 
